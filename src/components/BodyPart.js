@@ -18,6 +18,10 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
     cursor: 'pointer', 
     gap: '47px',
     }}
+    onClick={() => {
+        setBodyPart(item);
+        window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
+    }}
     >
         <img
         src={Icon}
@@ -30,10 +34,12 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         color="#3a1212"
         textTransform="capitalize"
         >
-            {item}
+        {item}
         </Typography>
     </Stack>
   )
 }
+
+// buscar icones de grupos de musculos para adicionar aos cards
 
 export default BodyPart;
