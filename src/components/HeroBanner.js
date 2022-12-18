@@ -27,7 +27,7 @@ const HeroBanner = () => {
         Exercitar, Suar, <br /> Repetir
       </Typography>
 
-      <Typography fontSize="22px" LineHeight="35px" mb={3} fontFamily="Alegreya" >
+      <Typography fontSize="22px" LineHeight="35px" mb={4} fontFamily="Alegreya" >
         Confira os melhores exercicios <br /> para se praticar
       </Typography>
 
@@ -40,12 +40,13 @@ const HeroBanner = () => {
       <Typography
       fontWeight={600} 
       color="#FF2625" 
-      sx={{ opacity: '0.1', 
-      display: { lg: 'block', xs: 'none' }, 
+      sx={{ 
+      opacity: '0.1', 
+      display: { lg: 'block', xs: 'none' }
       }} 
       fontSize="200px"
       >
-        Exercite-se
+        Exercicios
       </Typography>
       
       <img 
