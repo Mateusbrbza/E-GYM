@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const SimilarExercises = () => {
   return (
@@ -6,4 +6,4 @@ const SimilarExercises = () => {
   )
 }
 
-export default SimilarExercises
+export default SimilarExercises;
