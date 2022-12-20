@@ -9,6 +9,8 @@ import EquipmentImage from '../assets/icons/equipment.png';
 const Detail = ({ exerciseDetail }) => {
     const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
 
+    console.log(gifUrl);
+
   return (
     <Stack
     gap="60px"
