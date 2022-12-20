@@ -36,13 +36,14 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
       'https://exercisedb.p.rapidapi.com/exercises',
       exerciseOptions);
 
-      //console.log(exercisesData);
       const searchedExercises = exercisesData.filter(
         (item) => item.name.toLowerCase().includes(search)
                || item.target.toLowerCase().includes(search)
                || item.equipment.toLowerCase().includes(search)
                || item.bodyPart.toLowerCase().includes(search)
       );
+
+      window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
 
       setSearch('');
       setExercises(searchedExercises);
@@ -105,9 +106,10 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
       }}
       >
         <HorizontalScrollbar 
-        data={bodyParts} 
-        bodyPart={bodyPart} 
+        data={bodyParts}  
+        bodyParts
         setBodyPart={setBodyPart} 
+        bodyPart={bodyPart}
         />
       </Box>
     </Stack>
