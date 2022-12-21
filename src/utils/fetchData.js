@@ -7,6 +7,11 @@ export const exerciseOptions = {
   }
 };
 
+const options = {
+  method: 'GET',
+  url: 'https://youtube-search-and-download.p.rapidapi.com/video/related',
+};
+
 export const fetchData = async (url, options) => {
     const response = await fetch(url, options);
     const data = await response.json();
