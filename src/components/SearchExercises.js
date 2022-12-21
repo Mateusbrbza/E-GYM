@@ -105,12 +105,12 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
         padding: '20px'
       }}
       >
-        <HorizontalScrollbar 
+        {/* <HorizontalScrollbar 
         data={bodyParts}  
         bodyParts
         setBodyPart={setBodyPart} 
         bodyPart={bodyPart}
-        />
+        /> */}
       </Box>
     </Stack>
   )
