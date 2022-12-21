@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Box, Stack, Typography } from '@mui/material';
 
 const Footer = () => {
   return (
@@ -6,4 +7,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
