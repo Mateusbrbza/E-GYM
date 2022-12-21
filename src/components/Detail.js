@@ -30,7 +30,7 @@ const Detail = ({ exerciseDetail }) => {
     gap="60px"
     sx={{flexDirection: { lg: 'row' }, p: '20px', alignItems: 'center'
     }}>
-        <img src={gifUrl} alt={name} Loading="lazy" className="detail-image" />
+        <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
         <Stack
         sx={{ gap: { lg: '35px', xs: '20px'}}}
         >
@@ -47,27 +47,31 @@ const Detail = ({ exerciseDetail }) => {
                 <b>{name}</b> é um dos melhores exercícios para o seu 
                 {` `} <b>{target}</b>.
             </Typography>
-            {extraDetail.map((item) =>(
-                <Stack
-                key={item.name} direction="row" gap="25px" alignItems="center"
-                >
-                    <Button
-                    sx={{ background: '#fff2db', borderRadius: '50%', 
-                    width: '100px', height: '100px'
-                    }}
-                    >
-                        <img src={item.icon} alt={bodyPart}
-                        style={{ width: '50px', height: '50px' }}
-                        />
-                    </Button>
-                    <Typography textTransfrm="capitalize" variant="h5">
-                        {item.name}
-                    </Typography>
-                </Stack>
-            ))}
-        </Stack>
+            {extraDetail?.map((item) => (
+          <Stack 
+          key={item.name} 
+          direction="row" 
+          gap="24px" 
+          alignItems="center"
+          >
+            <Button 
+            sx={{ background: '#FFF2DB', borderRadius: '50%', 
+            width: '100px', height: '100px' }}
+            >
+              <img src={item.icon} alt={bodyPart} 
+              style={{ width: '50px', height: '50px' }} 
+              />
+            </Button>
+            <Typography 
+            textTransform="capitalize" 
+            sx={{ fontSize: { lg: '30px', xs: '20px' } }}>
+              {item.name}
+            </Typography>
+          </Stack>
+        ))}
+      </Stack>
     </Stack>
-  )
-}
+  );
+};
 
 export default Detail;
