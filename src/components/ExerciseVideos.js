@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Box, Stack } from '@mui/material';
 
 const ExerciseVideos = ({ exerciseVideos, name}) => {
-  console.log(exerciseVideos);
+  // console.log(exerciseVideos);
   if(!exerciseVideos.lengh) return 'Carregando...';
 
   return (
