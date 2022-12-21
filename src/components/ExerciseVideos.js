@@ -18,7 +18,7 @@ const ExerciseVideos = ({ exerciseVideos, name}) => {
       color="#000" 
       mb="33px"
       >
-        Veja videos do exercicio 
+        Veja videos do exercicio {` `}
         <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{name}</span>
       </Typography>
       <Stack
@@ -42,6 +42,14 @@ const ExerciseVideos = ({ exerciseVideos, name}) => {
             src={item.video.thumbnails[0].url} 
             alt={item.video.title}
             />
+            <Box>
+              <Typography variant="h5" color="#000">
+                {item.video.title}
+              </Typography>
+              <Typography variant="h6" color="#000">
+                {item.video.channelName}
+              </Typography>
+            </Box>
           </a>
         ))}
       </Stack>
