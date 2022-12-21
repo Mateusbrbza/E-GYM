@@ -1,9 +1,11 @@
 import React from 'react';
 import { Typography, Box, Stack } from '@mui/material';
+import Loader from './Loader';
 
 const ExerciseVideos = ({ exerciseVideos, name}) => {
   // console.log(exerciseVideos);
-  if(!exerciseVideos.lengh) return 'Carregando...';
+  //if(!exerciseVideos.lengh) return 'Carregando...';
+  if (!exerciseVideos.length) return <Loader />;
 
   return (
     <Box
