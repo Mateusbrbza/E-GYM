@@ -1,8 +1,14 @@
 import React from 'react';
+import { Typography, Box, Stack } from '@mui/material';
 
-const ExerciseVideos = () => {
+const ExerciseVideos = ({ ExerciseVideos, name}) => {
   return (
-    <div>ExeciseVideos</div>
+    <Box
+    sc={{ marginTop: { lg: '200px', xs: '20px'}}}
+    p="20px"
+    >
+
+    </Box>
   )
 }
 
