@@ -9,6 +9,21 @@ import EquipmentImage from '../assets/icons/equipment.png';
 const Detail = ({ exerciseDetail }) => {
     const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
 
+    const extraDetail = [
+        {
+            icon: BodyPartImage,
+            name: bodyPart,
+        },
+        {
+            icon: TargetImage,
+            name: target,
+        },
+        {
+            icon: EquipmentImage,
+            name: equipment,
+        },
+    ];
+
 
   return (
     <Stack
@@ -32,6 +47,24 @@ const Detail = ({ exerciseDetail }) => {
                 <b>{name}</b> é um dos melhores exercícios para o seu 
                 {` `} <b>{target}</b>.
             </Typography>
+            {extraDetail.map((item) =>(
+                <Stack
+                key={item.name} direction="row" gap="25px" alignItems="center"
+                >
+                    <Button
+                    sx={{ background: '#fff2db', borderRadius: '50%', 
+                    width: '100px', height: '100px'
+                    }}
+                    >
+                        <img src={item.icon} alt={bodyPart}
+                        style={{ width: '50px', height: '50px' }}
+                        />
+                    </Button>
+                    <Typography textTransfrm="capitalize" variant="h5">
+                        {item.name}
+                    </Typography>
+                </Stack>
+            ))}
         </Stack>
     </Stack>
   )
