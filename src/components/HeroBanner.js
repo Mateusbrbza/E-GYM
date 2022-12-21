@@ -28,7 +28,8 @@ const HeroBanner = () => {
       </Typography>
 
       <Typography fontSize="22px" LineHeight="35px" mb={4} fontFamily="Alegreya" >
-        Confira os melhores exercicios <br /> para se praticar
+        Confira os melhores exercicios <br /> para se praticar em casa ou em<br />
+        sua academia.
       </Typography>
 
       <Button variant="contained" color="error" href="#exercises" 
